@@ -1,2 +1,6 @@
+hooks:
+  pre: |
+    git clone -v git@bitbucket.org:Sem-Yeto/secret-repo.git secret_repo || true
 tests:
   - /bin/true
+  - ./test_number.py
